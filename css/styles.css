@@ -46,6 +46,12 @@ button:active {
     }
 
     .form-group label, .form-group input, .form-group select, .form-group button {
-        font-size: 14px;
+        font-size: 18px;  /* 增大字体大小 */
+    }
+    input[type="number"], input[type="text"], select {
+        height: 50px;  /* 增大输入框高度 */
+    }
+    button {
+        height: 60px;  /* 增大按钮高度 */
     }
 }
