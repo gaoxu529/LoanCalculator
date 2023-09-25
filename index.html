@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>贷款计算器</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- 设置网站在iOS主屏幕上的标题 -->
+    <meta name="apple-mobile-web-app-title" content="贷款计算器">
+    <!-- 为网站添加到iOS主屏幕时的图标 -->
+    <link rel="apple-touch-icon" href="images/icon.png">
+    <!-- 以全屏模式运行 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 设置状态栏的颜色（可选） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+</head>
+<body>
+    <div class="container">
+        <h1>贷款计算器</h1>
+        <label>贷款方式:</label>
+        <select id="loanType">
+            <option value="single">单利</option>
+            <option value="emi">等额本息</option>
+            <option value="equalPrincipal">等额本金</option>
+        </select>
+        <br>
+        <label>贷款金额:</label>
+        <input type="number" id="loanAmount">
+        <br>
+        <label>利率(%):</label>
+        <input type="number" id="interestRate">
+        <br>
+        <label>贷款期数(月):</label>
+        <input type="number" id="loanTerm">
+        <br>
+        <button onclick="calculateLoan()">计算</button>
+        <br>
+        <label>月供:</label>
+        <input type="text" id="monthlyPayment" readonly>
+        <br>
+        <label>总利息:</label>
+        <input type="text" id="totalInterest" readonly>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
