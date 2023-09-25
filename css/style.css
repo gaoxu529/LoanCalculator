@@ -1,6 +1,23 @@
 .container {
     margin: auto;
-    width: 80%;
+    width: 100%;
+    max-width: 400px;  /* 限制最大宽度 */
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
+}
+
+label, select, input, button {
+    width: 100%;  /* 宽度设置为100% */
+    margin-bottom: 20px;
+    font-size: 18px;  /* 增大字体大小 */
+}
+
+input[type="number"], input[type="text"], select {
+    padding: 10px;  /* 增大内边距 */
+}
+
+button {
+    padding: 15px 20px;  /* 增大内边距 */
+    font-size: 18px;  /* 增大字体大小 */
 }
